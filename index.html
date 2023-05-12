@@ -183,8 +183,13 @@ a:hover {
   cursor: pointer;
 }
 
-    </style>
-    <script>
+ul {
+  list-style: none;
+}
+/* gets rid of the bullets */
+
+</style>
+<script>
 //js for if you've been away for a while
 function showTimeAlert() {
   var lastVisitTime = localStorage.getItem("lastVisitTime");
@@ -265,11 +270,13 @@ window.onerror = apologizeForImageError;
       <section id="panoramas" class="gallery-section">
         <h2>panoramas</h2>
         <h3>What makes panoramic photography stand out?</h3>
+        <br>
         <ul>
           <li><strong>Wide perspective:</strong> Viewers can see much more of the subject / setting and allows more depth.</li>
           <br>
           <li><strong>Immersive experience:</strong> 180 and 360 degree panoramas are interactive and allow users to pan around the captured scene.</li>
         </ul>
+        <br>
         <div class="image-container">
           <img id="racecourse_180" src="./images/wetherby_race_180.JPG" alt="180 pano racecourse">
           <div class="image-caption">180 degree panorama at Wetherby Racecourse</div>
@@ -279,7 +286,7 @@ window.onerror = apologizeForImageError;
     <!-- Other sections of your gallery -->
   </main>
 
-  <h3>More coming soon!...</h3>
+  <h3 style="text-align: center;">More coming soon!...</h3>
 
 
 <div class="clearfix"></div>
