@@ -9,7 +9,7 @@
       body {
     margin: 0;
     padding: 0;
-    background-color: rgba(25, 0, 185, 0.168);
+    background-color: rgba(30, 0, 255, 0.168);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
@@ -58,7 +58,7 @@
     left: 0;
     width: 100%;
     height: 200%;
-    background: linear-gradient(180deg, #202c70 0%, #0d00ff 100%);
+    background: linear-gradient(180deg, #2f46cb 0%, #0c00eb 100%);
     opacity: 0.2;
     z-index: -1;
     pointer-events: none;
@@ -174,6 +174,7 @@ h1 {
  margin-top: 100px;
  overflow: hidden;
  text-align: center;
+ margin-bottom: 50px;
 }
 h1:before,
 h1:after {
@@ -213,6 +214,10 @@ ul {
 img {
   border-radius: 5px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.grey_box {
+  background-color: rgb(122, 122, 169);
 }
 
 </style>
@@ -270,6 +275,7 @@ window.onerror = apologizeForImageError;
 
 
   <main>
+    <div class="grey_box">
     <section id="yorkshire" class="gallery-section">
         <h2>Yorkshire</h2>
         <h3>Buildings</h3>
@@ -291,8 +297,10 @@ window.onerror = apologizeForImageError;
             <div class="image-caption">Shoot for local church news / email letter</div>
           </div> -->
         </div>
+    </div>
       </section>
 
+      <div class="grey_box">
       <section id="panoramas" class="gallery-section">
         <h2>Panoramas</h2>
         <h3>What makes <u> panoramic photography</u> stand out?</h3>
@@ -308,6 +316,7 @@ window.onerror = apologizeForImageError;
           <div class="image-caption">180 degree panorama at Wetherby Racecourse</div>
         </div>
       </section>
+      </div>
       
     <!-- Other sections of your gallery -->
   </main>
