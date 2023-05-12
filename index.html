@@ -185,11 +185,24 @@ a:hover {
 
     </style>
     <script>
+//js for if you've been away for a while
+function showTimeAlert() {
+  var lastVisitTime = localStorage.getItem("lastVisitTime");
+  
+  if (lastVisitTime) {
+    var currentTime = new Date().getTime();
+    var timeDifference = currentTime - parseInt(lastVisitTime);
+    var minutesAway = Math.floor(timeDifference / (1000 * 60)); // Convert milliseconds to minutes
+    
+    if (minutesAway >= 5) {
+      window.alert("Welcome back! You've been away for " + minutesAway + " minutes.");
+    }
+  }
+  
+  localStorage.setItem("lastVisitTime", new Date().getTime());
+}
 
-// js to warn mobile users
-window.onload = function() {
-    window.alert("Hi! if you're using a mobile, this site is much more optimised for desktop screens!")
-};
+
 
 // js to apologise if content isn't loading
 function apologizeForImageError() {
