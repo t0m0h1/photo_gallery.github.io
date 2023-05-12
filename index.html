@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     background-color: rgba(25, 0, 185, 0.168);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
   .sticky-header {
@@ -170,8 +170,28 @@ div.gallery {
 
 
 h1 {
-    text-align: center;
-    margin-top: 50px;
+ text-align: center;
+ margin-top: 100px;
+ overflow: hidden;
+ text-align: center;
+}
+h1:before,
+h1:after {
+ background-color: #333;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+h1:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+h1:after {
+ left: 0.5em;
+ margin-right: -50%;
 }
 
 h2 {
@@ -233,7 +253,7 @@ window.onerror = apologizeForImageError;
 </head>
 <body>
 
-    <h1>My personal projects</h1>
+    <h1>Personal projects</h1>
 
     <header class="sticky-header">
         <nav>
